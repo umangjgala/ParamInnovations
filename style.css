@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f2f6fd;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 5px solid black; */
+    margin: 0 10%;
+}
+
+.navbar {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbarLogo .logo img {
+    width: 80px;
+    margin-left: 10%;
+}
+
+.navbar .navbarLogo {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .navbarContents {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .navbarContents .homeBtn {
+    margin: 30px;
+   
+}
+
+.navbar .navbarContents .homeBtn:hover {
+    border-bottom: 2px solid #33363c;
+
+}
+
+.navbar .navbarContents .dropdown {
+    margin: 30px;
+    color: #5F6368;
+}
+
+.navbar .navbarContents .dropdown:hover {
+    border-bottom: 2px solid #33363c;
+}
+
+.navbar .navbarContents .login {
+    margin: 30px 0px 30px 20px;
+}
+
+.navbar .navbarContents .signup {
+    margin: 30px;
+}
+
+.navbar .navbarContents .dropbtn {
+    border: none;
+    background: none;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #5F6368;
+}
+
+.navbar .navbarContents .loginBtn {
+    border: none;
+    background: none;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(144, 131, 131);
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #5F6368;
+}
+
+.navbar .navbarContents .signupBtn {
+    border: none;
+    background: none;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(144, 131, 131);
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #5F6368;
+
+}
+
+.mainInfo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.section .mainInfo .svg {
+    width: 40%;
+    text-align: center;
+    margin: 20px;
+}
+
+
+.mainInfo .contents {
+    width: 60%;
+    margin: 5%;
+    align-items: center;
+}
+
+.mainInfo .contents h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #353a3f;
+}
+
+.mainInfo .contents p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #5F6368;
+}
+
+.section .footer {
+    background-color: #33363c;
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section .footer .about {
+    width: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.section .footer .about .image {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.section .footer .about .address {
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    margin: 20px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.bottonBorder {
+    border-bottom: 2px solid black;
+}
+
+.innerwheelClass {
+    animation: right 3s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.outerWheelClass {
+    animation: right 3s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.faceClass {
+    animation: rotate 2s infinite alternate;
+    transform-origin: right;
+    transform-box: fill-box;
+}
+
+.hairClass {
+    animation: rotate 2s infinite alternate;
+    transform-origin: right;
+    transform-box: fill-box;
+}
+
+@keyframes right {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotate {
+    10% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
